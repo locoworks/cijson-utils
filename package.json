@@ -1,6 +1,6 @@
 {
   "name": "@locoworks/cijson-utils",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "@locoworks/cijson-utils",
   "main": "lib/cijson-utils.js",
   "module": "lib/cijson-utils.esm.js",
@@ -10,6 +10,9 @@
     "/types",
     "changelog.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Rajiv Seelam",
     "email": "rajiv@betalectic.com.com"
