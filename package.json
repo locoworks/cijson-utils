@@ -29,7 +29,10 @@
     "lint": "eslint --max-warnings 0 \"src/**/*.{ts,js}\"",
     "lint:fix": "eslint --max-warnings 0 \"src/**/*.{ts,js}\" --fix",
     "prepublishOnly": "npm run test && npm run build",
-    "check-licenses": "license-checker --summary --excludePrivatePackages --onlyAllow \"MIT;MIT OR X11;Apache-2.0;ISC;BSD-3-Clause;BSD-2-Clause;CC-BY-4.0;Public Domain;BSD;CC-BY-3.0;CC0-1.0;Python-2.0;Unlicense\""
+    "check-licenses": "license-checker --summary --excludePrivatePackages --onlyAllow \"MIT;MIT OR X11;Apache-2.0;ISC;BSD-3-Clause;BSD-2-Clause;CC-BY-4.0;Public Domain;BSD;CC-BY-3.0;CC0-1.0;Python-2.0;Unlicense\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "npm run build && changeset publish"
   },
   "keywords": [
     "json",
@@ -63,7 +66,8 @@
     "rollup-plugin-eslint": "^7.0.0",
     "ts-jest": "^28.0.8",
     "typedoc": "^0.23.14",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.3",
+    "@changesets/cli": "^2.26.1"
   },
   "dependencies": {
     "fast-text-encoding": "^1.0.6",
